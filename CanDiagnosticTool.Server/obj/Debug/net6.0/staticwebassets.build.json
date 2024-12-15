@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "Wq8rUGl1bQGsa2DQCwCQZAQNtw7cOq2pTWj14R8yZr0=",
+  "Source": "CanDiagnosticTool.Server",
+  "BasePath": "_content/CanDiagnosticTool.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\candiagnostictool.client.esproj",
+      "Version": 2,
+      "Source": "candiagnostictool.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

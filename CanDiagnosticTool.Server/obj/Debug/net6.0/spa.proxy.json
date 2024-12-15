@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:5173",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\..\\candiagnostictool.client",
+"MaxTimeoutInSeconds": "120"
+}
+}

@@ -1,0 +1,1 @@
+C:\Users\adamb\source\repos\CanDiagnosticTool\candiagnostictool.client\obj\Debug\candiagnostictool.client.esproj.CoreCompileInputs.cache

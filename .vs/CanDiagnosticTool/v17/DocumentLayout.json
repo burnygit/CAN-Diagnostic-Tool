@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|solutionrelative:candiagnostictool.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|solutionrelative:candiagnostictool.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|solutionrelative:candiagnostictool.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|solutionrelative:candiagnostictool.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "vite.config.js",
+              "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\vite.config.js",
+              "RelativeDocumentMoniker": "candiagnostictool.client\\vite.config.js",
+              "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\vite.config.js",
+              "RelativeToolTip": "candiagnostictool.client\\vite.config.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-12T15:19:41.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "CanDiagnosticTool.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\appsettings.json",
+              "RelativeToolTip": "CanDiagnosticTool.Server\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-12T15:11:59.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\Program.cs",
+              "RelativeDocumentMoniker": "CanDiagnosticTool.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\Program.cs",
+              "RelativeToolTip": "CanDiagnosticTool.Server\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T15:08:14.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\App.jsx",
+              "RelativeDocumentMoniker": "candiagnostictool.client\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\App.jsx",
+              "RelativeToolTip": "candiagnostictool.client\\src\\App.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-12-12T15:08:18.431Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
