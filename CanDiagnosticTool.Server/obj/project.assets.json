@@ -2,6 +2,28 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Ixxat.Vci4/4.1.7": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Ixxat.Vci4.Contract.dll": {
+            "related": ".xml"
+          },
+          "lib/netcoreapp3.1/Ixxat.Vci4.dll": {
+            "related": ".Contract.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Ixxat.Vci4.Contract.dll": {
+            "related": ".xml"
+          },
+          "lib/netcoreapp3.1/Ixxat.Vci4.dll": {
+            "related": ".Contract.xml;.xml"
+          }
+        },
+        "build": {
+          "build/netcoreapp3.1/Ixxat.Vci4.targets": {}
+        }
+      },
       "Microsoft.AspNetCore.SpaProxy/6.0.36": {
         "type": "package",
         "compile": {
@@ -107,6 +129,66 @@
     }
   },
   "libraries": {
+    "Ixxat.Vci4/4.1.7": {
+      "sha512": "btqABg9KbdwA8Y65MUg2F3B0ht2kjGg7q6PklPQYiyxMe4IyTG5OXgc3JU4KPbsYgJ3Z40vZuracUQyxs513Qg==",
+      "type": "package",
+      "path": "ixxat.vci4/4.1.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net40/Ixxat.Vci4.targets",
+        "build/net40/arm64/vcinet.arm64.dll",
+        "build/net40/x64/vcinet.x64.dll",
+        "build/net40/x86/vcinet.x86.dll",
+        "build/net5.0-windows10.0/Ixxat.Vci4.targets",
+        "build/net5.0-windows10.0/arm/Ijwhost.dll",
+        "build/net5.0-windows10.0/arm/vcinet.arm.dll",
+        "build/net5.0-windows10.0/arm64/Ijwhost.dll",
+        "build/net5.0-windows10.0/arm64/vcinet.arm64.dll",
+        "build/net5.0-windows10.0/x64/Ijwhost.dll",
+        "build/net5.0-windows10.0/x64/vcinet.x64.dll",
+        "build/net5.0-windows10.0/x86/Ijwhost.dll",
+        "build/net5.0-windows10.0/x86/vcinet.x86.dll",
+        "build/net6.0-windows10.0/Ixxat.Vci4.targets",
+        "build/net6.0-windows10.0/arm/Ijwhost.dll",
+        "build/net6.0-windows10.0/arm/vcinet.arm.dll",
+        "build/net6.0-windows10.0/arm64/Ijwhost.dll",
+        "build/net6.0-windows10.0/arm64/vcinet.arm64.dll",
+        "build/net6.0-windows10.0/x64/Ijwhost.dll",
+        "build/net6.0-windows10.0/x64/vcinet.x64.dll",
+        "build/net6.0-windows10.0/x86/Ijwhost.dll",
+        "build/net6.0-windows10.0/x86/vcinet.x86.dll",
+        "build/netcoreapp3.1/Ixxat.Vci4.targets",
+        "build/netcoreapp3.1/arm/Ijwhost.dll",
+        "build/netcoreapp3.1/arm/vcinet.arm.dll",
+        "build/netcoreapp3.1/arm64/Ijwhost.dll",
+        "build/netcoreapp3.1/arm64/vcinet.arm64.dll",
+        "build/netcoreapp3.1/x64/Ijwhost.dll",
+        "build/netcoreapp3.1/x64/vcinet.x64.dll",
+        "build/netcoreapp3.1/x86/Ijwhost.dll",
+        "build/netcoreapp3.1/x86/vcinet.x86.dll",
+        "docs/README.md",
+        "images/HMSLogo.png",
+        "ixxat.vci4.4.1.7.nupkg.sha512",
+        "ixxat.vci4.nuspec",
+        "lib/net40/Ixxat.Vci4.Contract.dll",
+        "lib/net40/Ixxat.Vci4.Contract.xml",
+        "lib/net40/Ixxat.Vci4.dll",
+        "lib/net40/Ixxat.Vci4.xml",
+        "lib/net5.0-windows10.0/Ixxat.Vci4.Contract.dll",
+        "lib/net5.0-windows10.0/Ixxat.Vci4.Contract.xml",
+        "lib/net5.0-windows10.0/Ixxat.Vci4.dll",
+        "lib/net5.0-windows10.0/Ixxat.Vci4.xml",
+        "lib/net6.0-windows10.0/Ixxat.Vci4.Contract.dll",
+        "lib/net6.0-windows10.0/Ixxat.Vci4.Contract.xml",
+        "lib/net6.0-windows10.0/Ixxat.Vci4.dll",
+        "lib/net6.0-windows10.0/Ixxat.Vci4.xml",
+        "lib/netcoreapp3.1/Ixxat.Vci4.Contract.dll",
+        "lib/netcoreapp3.1/Ixxat.Vci4.Contract.xml",
+        "lib/netcoreapp3.1/Ixxat.Vci4.dll",
+        "lib/netcoreapp3.1/Ixxat.Vci4.xml"
+      ]
+    },
     "Microsoft.AspNetCore.SpaProxy/6.0.36": {
       "sha512": "33MgFYdm9iAcb/ZtxS+QuZNe21H0JmjOm1WNJYIDyED5f+gfJApv2tOkGLM7BQGEk/0dlCwcTnPP8JSVLy7M3Q==",
       "type": "package",
@@ -463,6 +545,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Ixxat.Vci4 >= 4.1.7",
       "Microsoft.AspNetCore.SpaProxy >= 6.*-*",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -512,6 +595,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Ixxat.Vci4": {
+            "target": "Package",
+            "version": "[4.1.7, )"
+          },
           "Microsoft.AspNetCore.SpaProxy": {
             "target": "Package",
             "version": "[6.*-*, )"

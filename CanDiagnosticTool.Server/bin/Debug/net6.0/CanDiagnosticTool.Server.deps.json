@@ -8,11 +8,24 @@
     ".NETCoreApp,Version=v6.0": {
       "CanDiagnosticTool.Server/1.0.0": {
         "dependencies": {
+          "Ixxat.Vci4": "4.1.7",
           "Microsoft.AspNetCore.SpaProxy": "6.0.36",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
           "CanDiagnosticTool.Server.dll": {}
+        }
+      },
+      "Ixxat.Vci4/4.1.7": {
+        "runtime": {
+          "lib/netcoreapp3.1/Ixxat.Vci4.Contract.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netcoreapp3.1/Ixxat.Vci4.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.SpaProxy/6.0.36": {
@@ -77,6 +90,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Ixxat.Vci4/4.1.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-btqABg9KbdwA8Y65MUg2F3B0ht2kjGg7q6PklPQYiyxMe4IyTG5OXgc3JU4KPbsYgJ3Z40vZuracUQyxs513Qg==",
+      "path": "ixxat.vci4/4.1.7",
+      "hashPath": "ixxat.vci4.4.1.7.nupkg.sha512"
     },
     "Microsoft.AspNetCore.SpaProxy/6.0.36": {
       "type": "package",
