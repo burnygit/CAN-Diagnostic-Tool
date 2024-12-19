@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|solutionrelative:candiagnostictool.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|solutionrelative:candiagnostictool.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|solutionrelative:candiagnostictool.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.server\\candiagnostictool.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|solutionrelative:candiagnostictool.server\\candiagnostictool.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|solutionrelative:candiagnostictool.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|solutionrelative:candiagnostictool.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|solutionrelative:candiagnostictool.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.server\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|solutionrelative:candiagnostictool.server\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|solutionrelative:candiagnostictool.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -26,58 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CanDiagnosticTool.Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CanDiagnosticTool.Server\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-19T14:11:59.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "CanDiagnosticTool.Server\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\WeatherForecast.cs",
+              "RelativeToolTip": "CanDiagnosticTool.Server\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T13:59:29.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\App.css",
+              "RelativeDocumentMoniker": "candiagnostictool.client\\src\\App.css",
+              "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\App.css",
+              "RelativeToolTip": "candiagnostictool.client\\src\\App.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-19T13:56:45.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\App.jsx",
+              "RelativeDocumentMoniker": "candiagnostictool.client\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\App.jsx",
+              "RelativeToolTip": "candiagnostictool.client\\src\\App.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-12-19T13:55:38.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "vite.config.js",
               "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\vite.config.js",
               "RelativeDocumentMoniker": "candiagnostictool.client\\vite.config.js",
               "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\vite.config.js",
               "RelativeToolTip": "candiagnostictool.client\\vite.config.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA4AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-12T15:19:41.573Z",
+              "WhenOpened": "2024-12-19T13:50:44.08Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "CanDiagnosticTool.Server",
+              "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj",
+              "RelativeDocumentMoniker": "CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj",
+              "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj",
+              "RelativeToolTip": "CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-19T13:41:30.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\appsettings.json",
               "RelativeDocumentMoniker": "CanDiagnosticTool.Server\\appsettings.json",
               "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\appsettings.json",
               "RelativeToolTip": "CanDiagnosticTool.Server\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-12-12T15:11:59.453Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\Program.cs",
               "RelativeDocumentMoniker": "CanDiagnosticTool.Server\\Program.cs",
               "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\Program.cs",
               "RelativeToolTip": "CanDiagnosticTool.Server\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T15:08:14.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.jsx",
-              "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\App.jsx",
-              "RelativeDocumentMoniker": "candiagnostictool.client\\src\\App.jsx",
-              "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\App.jsx",
-              "RelativeToolTip": "candiagnostictool.client\\src\\App.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-12-12T15:08:18.431Z",
               "EditorCaption": ""
             }
           ]

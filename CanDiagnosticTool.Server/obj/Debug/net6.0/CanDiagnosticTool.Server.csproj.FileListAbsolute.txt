@@ -33,3 +33,4 @@ C:\Users\adamb\source\repos\CanDiagnosticTool\CanDiagnosticTool.Server\obj\Debug
 C:\Users\adamb\source\repos\CanDiagnosticTool\CanDiagnosticTool.Server\obj\Debug\net6.0\CanDiagnosticTool.Server.pdb
 C:\Users\adamb\source\repos\CanDiagnosticTool\CanDiagnosticTool.Server\obj\Debug\net6.0\CanDiagnosticTool.Server.genruntimeconfig.cache
 C:\Users\adamb\source\repos\CanDiagnosticTool\CanDiagnosticTool.Server\obj\Debug\net6.0\ref\CanDiagnosticTool.Server.dll
+C:\Users\adamb\source\repos\CanDiagnosticTool\CanDiagnosticTool.Server\obj\Debug\net6.0\CanDiagnosticTool.Server.sourcelink.json
