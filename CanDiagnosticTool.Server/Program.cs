@@ -1,6 +1,15 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿
+using CanDiagnosticTool.Server;
+using Ixxat.Vci4;
+using Ixxat.Vci4.Bal;
+using Ixxat.Vci4.Bal.Can;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// Rejestracja CanService w kontenerze DI
+builder.Services.AddSingleton<ICanService, CanService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
