@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "candiagnostictool.client\\src\\App.jsx",
               "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\App.jsx",
               "RelativeToolTip": "candiagnostictool.client\\src\\App.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-12-21T16:26:48.83Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "CanDiagnosticTool.Server\\WebSocketHandler.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAQwBwAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T14:02:56.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T14:02:56.528Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "CanDiagnosticTool.Server\\CanService.cs",
               "ViewState": "AQIAAGYAAAAAAAAAAAAQwHMAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T14:57:25.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T14:57:25.623Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "CanDiagnosticTool.Server\\Program.cs",
               "ViewState": "AQIAACUAAAAAAAAAAAAAwDYAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T15:08:14.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-12T15:08:14.606Z"
             }
           ]
         }
