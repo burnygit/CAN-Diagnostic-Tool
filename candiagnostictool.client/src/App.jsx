@@ -1,11 +1,15 @@
-﻿import { useEffect, useState } from 'react';
+﻿import { useEffect, useState, useRef } from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
 
-    //useEffect aby zapobiec duplikowaniu sie WS
-    useEffect(() => {
+    const wsRef = useRef(null);
+
+    const receiveWS = () => {
+        if (wsRef.current) return;
+
         const ws = new WebSocket("wss://localhost:7199/ws/can");
+        wsRef.current = ws;
 
         ws.onopen = () => {
             console.log("WebSocket connection established (Połączono WebSocket)");
@@ -17,15 +21,29 @@ function App() {
 
         ws.onclose = () => {
             console.log("WebSocket connection closed (Zamknięto połączenie z WebSocket)");
+            wsRef.current = null;
+            setTimeout(receiveWS, 5000);
         };
 
         ws.onerror = (error) => {
             console.error("Websocket error:", error);
         };
+    }
+          
+    //useEffect aby zapobiec duplikowaniu sie WS
+    useEffect(() => {
+        receiveWS();
 
         return () => {
-            ws.close();
-        }
+            if (wsRef.current) {
+                console.log("receiveWebSocket state: ", wsRef.current.readyState); // 0 CONNECTING / 1 OPEN / 2 CLOSING / 3 CLOSED
+                if (wsRef.current.readyState === WebSocket.OPEN) {
+                    wsRef.current.close();
+                    wsRef.current = null;
+                }
+            }
+        };
+
 }, [])
     
 

@@ -7,16 +7,24 @@
       "RelativeMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|solutionrelative:candiagnostictool.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.server\\websockethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|solutionrelative:candiagnostictool.server\\websockethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.server\\canservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|solutionrelative:candiagnostictool.server\\canservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|solutionrelative:candiagnostictool.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|solutionrelative:candiagnostictool.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.server\\websockethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|solutionrelative:candiagnostictool.server\\websockethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F3C34EF0-6F4E-4DFC-A084-E4CC2CD0EB33}|candiagnostictool.client\\candiagnostictool.client.esproj|solutionrelative:candiagnostictool.client\\src\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|c:\\users\\adamb\\source\\repos\\candiagnostictool\\candiagnostictool.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1441F5F5-804D-481F-9752-B308E17C67B4}|CanDiagnosticTool.Server\\CanDiagnosticTool.Server.csproj|solutionrelative:candiagnostictool.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +34,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\index.css",
+              "RelativeDocumentMoniker": "candiagnostictool.client\\src\\index.css",
+              "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\index.css",
+              "RelativeToolTip": "candiagnostictool.client\\src\\index.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-22T12:59:41.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\App.css",
+              "RelativeDocumentMoniker": "candiagnostictool.client\\src\\App.css",
+              "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\App.css",
+              "RelativeToolTip": "candiagnostictool.client\\src\\App.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-22T12:59:37.9Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,14 +68,14 @@
               "RelativeDocumentMoniker": "candiagnostictool.client\\src\\App.jsx",
               "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\candiagnostictool.client\\src\\App.jsx",
               "RelativeToolTip": "candiagnostictool.client\\src\\App.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAwAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAIwB4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-12-21T16:26:48.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "WebSocketHandler.cs",
               "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\WebSocketHandler.cs",
               "RelativeDocumentMoniker": "CanDiagnosticTool.Server\\WebSocketHandler.cs",
@@ -55,19 +87,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CanService.cs",
               "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\CanService.cs",
               "RelativeDocumentMoniker": "CanDiagnosticTool.Server\\CanService.cs",
               "ToolTip": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\CanService.cs",
               "RelativeToolTip": "CanDiagnosticTool.Server\\CanService.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAQwHMAAAAVAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAADgvzQAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-19T14:57:25.623Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\adamb\\source\\repos\\CanDiagnosticTool\\CanDiagnosticTool.Server\\Program.cs",
               "RelativeDocumentMoniker": "CanDiagnosticTool.Server\\Program.cs",
