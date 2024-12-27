@@ -1,0 +1,53 @@
+
+
+.analogContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: white;
+    box-sizing: border-box;
+    width: 220px;
+    height: 220px;
+    box-shadow: 0.2px 0.2px 10px rgba(0,0,0,0.2);
+    font-weight: bold;
+    margin: 10px;
+}
+
+.analogHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( to right, #0049e6,#03298b );
+    height: 25%;
+    border-radius: 15px 15px 0 0;
+}
+
+.analogLabel {
+    position: absolute;
+    flex-grow: 1;
+}
+
+.analogValue {
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    height: 50%;
+}
+
+.analogFooter {
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+}
+
