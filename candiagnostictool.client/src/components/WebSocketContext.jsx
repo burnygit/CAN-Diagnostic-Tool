@@ -1,5 +1,6 @@
 ﻿import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
 
+
 // Stwórz kontekst
 const WebSocketContext = createContext(null);
 
@@ -10,6 +11,17 @@ export const useWebSocketContext = () => useContext(WebSocketContext);
 export const WebSocketProvider = ({ url, children }) => {
     const [data, setData] = useState({});
     const wsRef = useRef(null);
+
+    // Funkcja do wysyłania wiadomości
+    const sendMessage = (message) => {
+        if (wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
+            const jsonMessage = JSON.stringify(message);
+            console.log('Sending:', jsonMessage);
+            wsRef.current.send(jsonMessage); // Wysłanie wiadomości
+        } else {
+            console.error('WebSocket is not connected.');
+        }
+    };
 
     useEffect(() => {
         const connectWebSocket = () => {
@@ -66,7 +78,7 @@ export const WebSocketProvider = ({ url, children }) => {
     }, [url]);
 
     return (
-        <WebSocketContext.Provider value={data}>
+        <WebSocketContext.Provider value={{ data, sendMessage }}>
             {children}
         </WebSocketContext.Provider>
     );

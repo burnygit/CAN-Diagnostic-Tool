@@ -9,8 +9,8 @@
     {
         ICanMessageReader GetMessageReader();
         ICanMessageWriter GetMessageWriter();
-        //ICanMessage CreateMessage(CanMessage message);
-        //void SendMessage(CanMessage message);
+        ICanMessage CreateMessage(CanMessage message);
+        void SendMessage(CanMessage message);
     }
     public class CanService : ICanService
     {
@@ -130,6 +130,47 @@
         // Funkcja wrapująca by nie duplikwoał się Writer
         public ICanMessageWriter GetMessageWriter() { return _messageWriter; }
 
+        public ICanMessage CreateMessage(CanMessage message)
+        {
+            ICanMessage canMessage = (ICanMessage)_messageFactory.CreateMsg(typeof(ICanMessage));
+            canMessage.Identifier = message.Identifier;
+            canMessage.TimeStamp = message.Timestamp;
+
+            if (message.Data != null && message.Data.Length > 0)
+            {
+                canMessage.DataLength = (byte)message.Data.Length;
+
+                byte[] dataBytes = message.Data.Select(i => (byte)i).ToArray();
+                for (int i = 0; i < dataBytes.Length; i++)
+                {
+                    canMessage[i] = dataBytes[i];
+                }
+            }
+            else
+            {
+                canMessage.DataLength = 0;
+            }
+
+            return canMessage;
+        }
+
+        public void SendMessage(CanMessage message)
+        {
+            try
+            {
+                // Tworzymy ICanMessage na podstawie niestandardowego CanMessage
+                ICanMessage canMessageToSend = CreateMessage(message);
+
+                // Wysłanie wiadomości CAN za pomocą ICanMessageWriter
+                _messageWriter.SendMessage(canMessageToSend);
+                Console.WriteLine("CAN message sent successfully.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error sending CAN message: {ex.Message}");
+                throw;
+            }
+        }
 
         public void Dispose()
         {
@@ -152,5 +193,10 @@
         public uint Timestamp { get; set; }
     }
 
-
+    public class CanMessageFromClient // Data od klienta musi byc w postaci tablicy int (JSON ograniczenie)
+    {
+        public int Identifier { get; set; }
+        public int[] Data { get; set; }
+        public float Value { get; set; }
+    }
 }

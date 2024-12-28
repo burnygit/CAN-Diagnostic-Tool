@@ -4,6 +4,7 @@ import './App.css';
 import './components/CanReceived.jsx'
 import CanReceived from './components/CanReceived.jsx';
 
+
 const App = () => {
 
 //    const wsRef = useRef(null);
@@ -52,6 +53,7 @@ const App = () => {
 
 
     return (
+
         <div className="container">
             <div className = "header">
                 <div className="headerTitle">
@@ -62,7 +64,8 @@ const App = () => {
                 </div>
             </div>
             <CanReceived/>
-        </div>
+            </div>
+
     );
     
 

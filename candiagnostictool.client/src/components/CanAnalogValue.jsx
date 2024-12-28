@@ -6,7 +6,7 @@ import { useWebSocketContext } from './WebSocketContext';
 
 const EniAnalogValue = ({ Identifier, startByte, length, factor = 1, decimalPlaces = 2, Label, Unit }) => {
 
-    const data = useWebSocketContext();
+    const {data} = useWebSocketContext();
 
     const extractValue = (frame, startByte, length, factor, decimalPlaces) => {
         if (!frame || !frame.Data) {
@@ -29,7 +29,7 @@ const EniAnalogValue = ({ Identifier, startByte, length, factor = 1, decimalPlac
     };
 
     let value = 0;
-    const frame = data[Identifier]; // Pobierz dane tylko dla danego identyfikatora CAN
+    const frame = data?.[Identifier]; // Pobierz dane tylko dla danego identyfikatora CAN
     if (frame && frame.Data) {
         value = extractValue(frame, startByte, length, factor, decimalPlaces);
 

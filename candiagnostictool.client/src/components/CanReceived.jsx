@@ -2,21 +2,37 @@
 
 import './CanReceived.css'
 
-import { WebSocketProvider } from './WebSocketContext';
+
+import { useWebSocketContext } from './WebSocketContext'
 
 import CanAnalogValue from './CanAnalogValue';
 import CanLed from './CanLed';
+import CanSendValue from './CanSendValue';
 
 const CanReceived = () => {
 
+    const { data, sendMessage } = useWebSocketContext();
+
+    const sendCurrentValue = (current) => {
+        const currentInBytes = Math.round(current * 100);
+        const byte7 = (currentInBytes >> 8) & 0xFF;
+        const byte8 = currentInBytes & 0xFF;
+
+        const message = {
+            Identifier: 0x3C4, // Identyfikator CAN
+            Data: [0, 0, 0, 0, 0, 0, byte7, byte8]
+        };
+
+        sendMessage(message); // Wysyłanie przez WebSocketProvider
+        console.log(`Sent CAN message with current: ${current} A`);
+    };
 
 
     return (
         <>
             <div className="receivedValues">
-                <WebSocketProvider url="wss://localhost:7199/ws/can">
-
-             
+                
+            
                     <CanAnalogValue
                         Label="Analog Test 4"
                         Unit="A"
@@ -50,35 +66,79 @@ const CanReceived = () => {
                         maxValue={150}
                     />
 
-                    <CanLed
-                        ledLabel="LED 1"
-                        identifier={0x123}
-                        byte={0}
-                        bitMask={0x01}
+                    <CanSendValue
+                        label="Nastaw ICH"
+                        min={0}
+                        max={0.99}
+                        interval={1000}
+                        onSendValue={sendCurrentValue}
                     />
 
-                    <CanLed
-                        ledLabel="LED 1"
-                        identifier={0x123}
-                        byte={0}
-                        bitMask={0x02}
-                    />
+                    <div className='ledContainer'>
 
-                    <CanLed
-                        ledLabel="LED 1"
-                        identifier={0x123}
-                        byte={0}
-                        bitMask={0x04}
-                    />
+                        <div className='ledHeader'> LOREM IPSUM LEDS</div>
 
-                    <CanLed
-                        ledLabel="LED 1"
-                        identifier={0x123}
-                        byte={0}
-                        bitMask={0x08}
-                    />
+                        <div className={`led-grid`}>
+                         
+                            <CanLed
+                                ledLabel="LED 1"
+                                identifier={0x123}
+                                byte={0}
+                                bitMask={0x01}
+                            />
 
-                </WebSocketProvider>
+                            <CanLed
+                                ledLabel="LED 2"
+                                identifier={0x123}
+                                byte={0}
+                                bitMask={0x02}
+                            />
+
+                            <CanLed
+                                ledLabel="LED 3"
+                                identifier={0x123}
+                                byte={0}
+                                bitMask={0x04}
+                            />
+
+                            <CanLed
+                                ledLabel="LED 4"
+                                identifier={0x123}
+                                byte={0}
+                                bitMask={0x08}
+                            />
+                            <CanLed
+                                ledLabel="LED 5"
+                                identifier={0x123}
+                                byte={0}
+                                bitMask={0x10}
+                            />
+
+                            <CanLed
+                                ledLabel="LED 6"
+                                identifier={0x123}
+                                byte={0}
+                                bitMask={0x20}
+                            />
+
+                            <CanLed
+                                ledLabel="LED 7"
+                                identifier={0x123}
+                                byte={0}
+                                bitMask={0x40}
+                            />
+
+                            <CanLed
+                                ledLabel="LED 8"
+                                identifier={0x123}
+                                byte={0}
+                                bitMask={0x80}
+                            />
+
+                        </div>
+                    </div>
+
+                
             </div>
         </>
     )
