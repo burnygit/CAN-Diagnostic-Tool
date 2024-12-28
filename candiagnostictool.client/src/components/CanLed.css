@@ -1,0 +1,32 @@
+.led-container {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    box-sizing: border-box;
+    width: 120px;
+}
+
+.led {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    margin-right: 7px;
+    border-radius: 5px;
+    box-shadow: 0.2px 0.2px 5px rgba(0,0,0,0.6);
+}
+
+.led-off {
+    background: linear-gradient( 45deg, #d1d1d1,#969696 );
+}
+
+.led-on {
+    background: linear-gradient( 45deg, #135c16,#04b50a );
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+}
