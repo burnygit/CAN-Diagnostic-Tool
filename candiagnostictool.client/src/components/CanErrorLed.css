@@ -1,0 +1,44 @@
+.led-container {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    box-sizing: border-box;
+    width: 120px;
+}
+
+.led {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    margin-right: 7px;
+    border-radius: 5px;
+    box-shadow: 0.2px 0.2px 5px rgba(0,0,0,0.6);
+}
+
+.error {
+    background: linear-gradient( to right, #c2000d,#94000a );
+}
+
+.warning {
+    background: linear-gradient( to right, #0049e6,#03298b );
+}
+
+.info {
+    background: linear-gradient( to right, #edba00,#c99e02 );
+}
+
+.default {
+    background: linear-gradient( 45deg, #135c16,#04b50a );
+}
+
+.undefined{
+    background:none;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+}

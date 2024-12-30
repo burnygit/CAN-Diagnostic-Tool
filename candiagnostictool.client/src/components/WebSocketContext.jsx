@@ -15,9 +15,10 @@ export const WebSocketProvider = ({ url, children }) => {
     // Funkcja do wysyłania wiadomości
     const sendMessage = (message) => {
         if (wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
-            const jsonMessage = JSON.stringify(message);
-            console.log('Sending:', jsonMessage);
-            wsRef.current.send(jsonMessage); // Wysłanie wiadomości
+            
+            console.log('Sending:', message);
+            console.log('JSON message:', JSON.stringify(message));
+            wsRef.current.send(JSON.stringify(message)); // Wysłanie wiadomości
         } else {
             console.error('WebSocket is not connected.');
         }

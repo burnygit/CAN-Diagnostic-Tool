@@ -8,7 +8,7 @@ const CanLed = ({ledLabel, identifier, byte, bitMask }) => {
 
     const [color, setColor] = useState("led-off");
 
-    const data = useWebSocketContext();
+    const { data } = useWebSocketContext();
 
     useEffect(() => {
         const frame = data[identifier];

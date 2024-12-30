@@ -18,6 +18,7 @@ namespace CanDiagnosticTool.Server
         //Obsługa odbierania danych z magistrali CAN i wysyłania do frontendu
         public async Task HandleReceive(WebSocket webSocket)
         {
+            Console.WriteLine("receive");
             var messageReader = _canService.GetMessageReader();
 
             //debug
@@ -25,6 +26,7 @@ namespace CanDiagnosticTool.Server
 
             while (webSocket.State == WebSocketState.Open)
             {
+
                 //Sprawdza, czy są nowe wiadomości z magistrali CAN
                 if (messageReader.ReadMessage(out ICanMessage message))
                 {
@@ -49,19 +51,20 @@ namespace CanDiagnosticTool.Server
                     messageCount++;
                     if (messageCount % 100 == 0)
                     {
-                        Console.WriteLine($"Sent {messageCount} messages.");
+                        Console.WriteLine($"Sent {messageCount} messages vvx.");
                     }
                     //debug end
                 }
 
                 //[!] Mozliwe ze do usunięcia (Delay)
-                await Task.Delay(2);
+                //await Task.Delay(2);
             }
             await webSocket.CloseAsync(WebSocketCloseStatus.NormalClosure, "Closing", CancellationToken.None);
         }
 
         public async Task HandleSend(WebSocket webSocket)
-        { 
+        {
+            Console.WriteLine("send");
             var messageWriter = _canService.GetMessageWriter();
             var buffer = new byte[1024 * 4];
 
@@ -104,6 +107,7 @@ namespace CanDiagnosticTool.Server
                         try
                         {
                             messageWriter.SendMessage(canMessageToSend);
+                            Console.WriteLine("Can message sent succesfully.");
                         }
                         catch (Exception ex)
                         {

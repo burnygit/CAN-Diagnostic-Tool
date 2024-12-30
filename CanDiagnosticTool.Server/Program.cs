@@ -50,16 +50,23 @@ app.Use(async (context, next) =>
     {
         if (context.WebSockets.IsWebSocketRequest)
         {
+            Console.WriteLine("WebSocket connection requested at /ws/can");
+
             var webSocket = await context.WebSockets.AcceptWebSocketAsync();
 
             // Pobierz handler z DI
             var handler = context.RequestServices.GetRequiredService<WebSocketHandler>();
 
-            await handler.HandleReceive(webSocket);
+            var receiveTask = handler.HandleReceive(webSocket); // Obsługuje odbiór wiadomości
+            var sendTask = handler.HandleSend(webSocket); // Obsługuje wysyłanie wiadomości
+
+            //await handler.HandleReceive(webSocket);
+            await Task.WhenAll(receiveTask, sendTask);
         }
         else
         {
             context.Response.StatusCode = 400;
+            Console.WriteLine("Invalid WebSocket request (not a WebSocket request)");
         }
     }
     else

@@ -7,6 +7,7 @@ import { useWebSocketContext } from './WebSocketContext'
 
 import CanAnalogValue from './CanAnalogValue';
 import CanLed from './CanLed';
+import CanErrorLed from './CanErrorLed';
 import CanSendValue from './CanSendValue';
 
 const CanReceived = () => {
@@ -20,11 +21,23 @@ const CanReceived = () => {
 
         const message = {
             Identifier: 0x3C4, // Identyfikator CAN
-            Data: [0, 0, 0, 0, 0, 0, byte7, byte8]
+            Data: [0, 0, 0, 0, 0, 0, byte7, byte8],
         };
 
-        sendMessage(message); // Wysyłanie przez WebSocketProvider
-        console.log(`Sent CAN message with current: ${current} A`);
+        try {
+            if (typeof sendMessage !== 'function') {
+                throw new Error("sendMessage is not a function. Check WebSocketContext setup.");
+            }
+
+            sendMessage(message); // Wysyłanie przez WebSocketProvider
+            console.log(`Sent CAN message with current: ${current} A`);
+        }
+        catch (error) {
+            console.error("Failed to send CAN message:", error);
+            alert(`Błąd wysyłania wiadomości CAN: ${error.message}`);
+        }
+        
+        
     };
 
 
@@ -134,6 +147,13 @@ const CanReceived = () => {
                                 byte={0}
                                 bitMask={0x80}
                             />
+
+                        <CanErrorLed
+                            label="HVAC"
+                            identifier={0x124}
+                            byte={0}
+                            bitMask={0x03}
+                        />
 
                         </div>
                     </div>
