@@ -46,27 +46,19 @@ app.UseWebSockets(options);
 
 app.Use(async (context, next) =>
 {
-    if (context.Request.Path == "/ws/can") 
+    if (context.Request.Path == "/ws/can")
     {
         if (context.WebSockets.IsWebSocketRequest)
         {
-            Console.WriteLine("WebSocket connection requested at /ws/can");
-
+            Console.WriteLine("ws/can connected");
             var webSocket = await context.WebSockets.AcceptWebSocketAsync();
-
             // Pobierz handler z DI
             var handler = context.RequestServices.GetRequiredService<WebSocketHandler>();
-
-            var receiveTask = handler.HandleReceive(webSocket); // Obsługuje odbiór wiadomości
-            var sendTask = handler.HandleSend(webSocket); // Obsługuje wysyłanie wiadomości
-
-            //await handler.HandleReceive(webSocket);
-            await Task.WhenAll(receiveTask, sendTask);
+            await handler.HandleReceive(webSocket);
         }
         else
         {
             context.Response.StatusCode = 400;
-            Console.WriteLine("Invalid WebSocket request (not a WebSocket request)");
         }
     }
     else
@@ -74,6 +66,30 @@ app.Use(async (context, next) =>
         await next();
     }
 });
+
+app.Use(async (context, next) =>
+{
+    if (context.Request.Path == "/ws/canSend")
+    {
+        if (context.WebSockets.IsWebSocketRequest)
+        {
+            Console.WriteLine("ws/canSend connected");
+            var webSocket = await context.WebSockets.AcceptWebSocketAsync();
+            // Pobierz handler z DI
+            var handler = context.RequestServices.GetRequiredService<WebSocketHandler>();
+            await handler.HandleSend(webSocket);
+        }
+        else
+        {
+            context.Response.StatusCode = 400;
+        }
+    }
+    else
+    {
+        await next();
+    }
+});
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

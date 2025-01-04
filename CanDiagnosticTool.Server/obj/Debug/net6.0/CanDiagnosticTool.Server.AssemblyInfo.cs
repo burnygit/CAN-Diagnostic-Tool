@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CanDiagnosticTool.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9ededfdadb83853b34f6e839867dcd9d8ae7b8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82b60b4244b5e34ef7e45b870d50fa133f113326")]
 [assembly: System.Reflection.AssemblyProductAttribute("CanDiagnosticTool.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CanDiagnosticTool.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

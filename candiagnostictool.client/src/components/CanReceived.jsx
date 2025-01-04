@@ -8,7 +8,6 @@ import { useWebSocketContext } from './WebSocketContext'
 import CanAnalogValue from './CanAnalogValue';
 import CanLed from './CanLed';
 import CanErrorLed from './CanErrorLed';
-import CanSendValue from './CanSendValue';
 
 const CanReceived = () => {
 
@@ -79,13 +78,7 @@ const CanReceived = () => {
                         maxValue={150}
                     />
 
-                    <CanSendValue
-                        label="Nastaw ICH"
-                        min={0}
-                        max={0.99}
-                        interval={1000}
-                        onSendValue={sendCurrentValue}
-                    />
+                    
 
                     <div className='ledContainer'>
 

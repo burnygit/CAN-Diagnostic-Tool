@@ -16,6 +16,7 @@ const CanLed = ({ledLabel, identifier, byte, bitMask }) => {
             const ledState = analyzeLed(frame, byte, bitMask);
             setColor(ledState ? 'led-on' : 'led-off');
         }
+        else { setColor('undefined') };
 
     }, [data, identifier, byte, bitMask]);
 

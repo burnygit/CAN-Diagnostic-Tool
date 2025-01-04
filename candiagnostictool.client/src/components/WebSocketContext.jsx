@@ -12,13 +12,16 @@ export const WebSocketProvider = ({ url, children }) => {
     const [data, setData] = useState({});
     const wsRef = useRef(null);
 
+    const timeouts = useRef({});
+
     // Funkcja do wysyłania wiadomości
     const sendMessage = (message) => {
         if (wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
-            
+
+            wsRef.current.send(JSON.stringify(message));
             console.log('Sending:', message);
             console.log('JSON message:', JSON.stringify(message));
-            wsRef.current.send(JSON.stringify(message)); // Wysłanie wiadomości
+             // Wysłanie wiadomości
         } else {
             console.error('WebSocket is not connected.');
         }
@@ -39,13 +42,29 @@ export const WebSocketProvider = ({ url, children }) => {
                     console.log('Received message:', message);
                     //setData((prevData) => ({ ...prevData, ...message }))
                     if (message.Identifier && Array.isArray(message.Data)) {
+                        const identifier = message.Identifier;
                         setData((prevData) => {
                             // Aktualizuj tylko odpowiednią część danych dla tego identyfikatora
                             return {
                                 ...prevData,
-                                [message.Identifier]: message
+                                [identifier]: message
                             };
                         });
+
+                        if (timeouts.current[identifier]) {
+                            clearTimeout(timeouts.current[identifier]);
+                        }
+
+                        timeouts.current[identifier] = setTimeout(() => {
+                            // Usuń ramkę po 5 sekundach braku aktualizacji
+                            setData((prevData) => {
+                                const newData = { ...prevData };
+                                delete newData[identifier];
+                                return newData;
+                            });
+
+                            delete timeouts.current[identifier];
+                        }, 5000);
                     }
                     else {
                         console.warn('Invalid message format:', message);

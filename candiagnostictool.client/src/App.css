@@ -53,3 +53,11 @@ body {
     margin: 30px 0 0 0;
     font-size: 20px;
 }
+
+.mainContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 600px;
+}
