@@ -54,7 +54,7 @@ const CanSendValue = ({ label, min, max, step, interval = 250, onSendValue }) =>
             </div>
             <div className={`setValueFooter`}>
                 <button className='setValueButton' onClick={handleButtonClick}>
-                    {isClicked ? (<a style={{ color: '#870714' }}>STOP</a>) : "WYSYŁAJ"}
+                    {isClicked ? (<a className ="stopButton" style={{ color: '#870714' }}>STOP</a>) : "WYSYŁAJ"}
                 </button>
             </div>
         </div>

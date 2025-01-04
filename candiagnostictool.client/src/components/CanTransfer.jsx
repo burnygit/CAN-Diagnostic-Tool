@@ -13,7 +13,7 @@ const CanTransfer = () => {
         sendWebSocketRef.current = ws;
 
         ws.onopen = () => {
-            console.log('WebSocket SEND connection established');
+            console.log('WebSocket (SEND) connected');
         };
 
         ws.onclose = () => {
@@ -99,6 +99,14 @@ const CanTransfer = () => {
                 max={0.99}
                 interval={1000}
                 onSendValue={sendCurrentValue}
+            />
+
+            <CanSendValue
+                label="Nastaw UWN"
+                min={0}
+                max={0.99}
+                interval={250}
+                onSendValue={sendVoltageValue}
             />
 
         </div>
