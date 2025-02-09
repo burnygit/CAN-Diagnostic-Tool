@@ -45,20 +45,20 @@ const CanReceived = () => {
             <div className="receivedValues">
                 
             
-                    <CanAnalogValue
-                        Label="Analog Test 4"
-                        Unit="A"
-                        Identifier={0x3C5}
-                        startByte={2}
-                        length={2}
-                        factor={10}
-                        decimalPlaces={1}
-                        maxValue={150}
+                <CanAnalogValue
+                    Label="Current"
+                    Unit="A"
+                    Identifier={0x3C5}
+                    startBit={0}
+                    length={16}
+                    factor={10}
+                    decimalPlaces={1}
+                    isSigned={true}
                     />
 
                     <CanAnalogValue
-                        Label="Analog Test 5"
-                        Unit="A"
+                        Label="Voltage"
+                        Unit="V"
                         Identifier={0x3C6}
                         startByte={0}
                         length={2}
@@ -68,8 +68,8 @@ const CanReceived = () => {
                     />
 
                     <CanAnalogValue
-                        Label="Analog Test 6"
-                        Unit="A"
+                        Label="Temperature"
+                        Unit="°C"
                         Identifier={0x3C7}
                         startByte={0}
                         length={2}
@@ -82,7 +82,7 @@ const CanReceived = () => {
 
                     <div className='ledContainer'>
 
-                        <div className='ledHeader'> LOREM IPSUM LEDS</div>
+                        <div className='ledHeader'> CAN LEDS</div>
 
                         <div className={`led-grid`}>
                          
@@ -142,7 +142,7 @@ const CanReceived = () => {
                             />
 
                         <CanErrorLed
-                            label="HVAC"
+                            label="ERR"
                             identifier={0x124}
                             byte={0}
                             bitMask={0x03}

@@ -6,7 +6,7 @@ import { useWebSocketContext } from './WebSocketContext';
 
 const CanLed = ({ledLabel, identifier, byte, bitMask }) => {
 
-    const [color, setColor] = useState("led-off");
+    const [color, setColor] = useState("led-on");
 
     const { data } = useWebSocketContext();
 
@@ -19,7 +19,6 @@ const CanLed = ({ledLabel, identifier, byte, bitMask }) => {
         else { setColor('undefined') };
 
     }, [data, identifier, byte, bitMask]);
-
 
     const analyzeLed = (frame, byte, bit_mask) => {
 

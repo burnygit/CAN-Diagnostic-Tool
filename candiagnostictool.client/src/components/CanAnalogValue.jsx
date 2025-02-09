@@ -4,11 +4,11 @@ import "./CanAnalogValue.css"
 import { useWebSocketContext } from './WebSocketContext';
 
 
-const EniAnalogValue = ({ Identifier, startByte, length, factor = 1, decimalPlaces = 2, Label, Unit }) => {
+const EniAnalogValue = ({ Identifier, startBit, length, factor = 1, decimalPlaces = 2, Label, Unit, isSigned = false }) => {
 
     const {data} = useWebSocketContext();
 
-    const extractValue = (frame, startByte, length, factor, decimalPlaces) => {
+    const extractValue = (frame, startByte, length, factor, decimalPlaces, isSigned) => {
         if (!frame || !frame.Data) {
             console.error('Invalid frame data:', frame);
             return 0; // Zwracamy 0, jeśli nie ma danych
@@ -16,14 +16,22 @@ const EniAnalogValue = ({ Identifier, startByte, length, factor = 1, decimalPlac
 
         let value = 0;
         for (let i = 0; i < length; i++) {
-            const byteValue = frame.Data[startByte + i];
-            if (byteValue === undefined) {
+            const bitIndex = startBit + i;
+            const byteIndex = Math.floor(bitIndex / 8);
+            const bitOffset = 7 - (bitIndex % 8);          
+           
+            if (frame.Data[byteIndex] === undefined) {
                 console.error('Byte value is undefined at index:', startByte + i);
                 return 0; // Zwracamy 0, jeśli jest problem z bajtem
             }
-            value = (value << 8) | byteValue; // Łączenie bajtów
+            const bit = (frame.Data[byteIndex] >> bitOffset) & 1;
+            value = (value << 1) | bit; // Łączenie bajtów
         }
 
+        // Jeśli wartość jest signed, uwzględniamy najbardziej znaczący bit
+        if (isSigned && (value & (1 << (length -1)))) {
+            value -= (1 << length); // Konwersja na liczbę ujemną
+        }
         // Zwracamy wartość po podzieleniu przez factor i zaokrągleniu do wymaganej liczby miejsc
         return (value / factor).toFixed(decimalPlaces);
     };
@@ -31,7 +39,7 @@ const EniAnalogValue = ({ Identifier, startByte, length, factor = 1, decimalPlac
     let value = 0;
     const frame = data?.[Identifier]; // Pobierz dane tylko dla danego identyfikatora CAN
     if (frame && frame.Data) {
-        value = extractValue(frame, startByte, length, factor, decimalPlaces);
+        value = extractValue(frame, startBit, length, factor, decimalPlaces, isSigned);
 
 
     }
